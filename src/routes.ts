@@ -1,10 +1,10 @@
-import { IndexController } from './controllers/IndexController';
 import { PingController } from './controllers/PingController';
+import { CpuStatsController } from './controllers/CpuStatsController';
 import { Application, Router } from 'express';
 
 const _routes: [string, Router][] = [
-  ['/', IndexController],
   ['/ping', PingController],
+  ['/api/cpu-stats', CpuStatsController],
 ];
 
 export const routes = (app: Application) => {
