@@ -1,0 +1,14 @@
+node_modules
+.vscode
+
+# Optional npm cache directory
+.npm
+
+# Dependency directories
+node_modules
+
+# Build folders
+.dist
+
+# ENV files
+.env
