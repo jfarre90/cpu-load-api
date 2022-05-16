@@ -6,7 +6,7 @@ import { CpuUsageStats } from './types';
 export const collectCpuStats: () => Promise<CpuUsageStats> = async () => {
   const cpu = osu.cpu;
 
-  const currentTime = moment().format('HH:mm:ss');
+  const currentTime = moment().unix();
 
   const averageUsage15min = cpu.loadavgTime(15);
   const uptime = os.uptime();

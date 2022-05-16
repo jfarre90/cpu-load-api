@@ -1,6 +1,6 @@
 export type CpuUsageStats = {
   currentUsage: number;
-  currentTime: string;
+  currentTime: number;
   averageUsage15min: number;
   uptime: number;
 };
