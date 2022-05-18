@@ -1,4 +1,4 @@
-import { corsOptions } from 'config/corsOptions';
+import { corsOptions } from './config/corsOptions';
 import cors from 'cors';
 import express, { Application } from 'express';
 import { routes } from './routes';

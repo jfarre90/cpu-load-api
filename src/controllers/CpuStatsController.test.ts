@@ -1,5 +1,5 @@
 import request from 'supertest';
-import { app } from '../app';
+import app from '../app';
 
 describe('Test CPU stats endpoint', () => {
   it('Request /api/cpu-stats should return the server cpu stats', async () => {
@@ -10,7 +10,8 @@ describe('Test CPU stats endpoint', () => {
     expect(result.body.data).toEqual(
       expect.objectContaining({
         currentUsage: expect.any(Number),
-        averageUsage15min: expect.any(Number),
+        currentTime: expect.any(Number),
+        loadAverage: expect.any(Number),
         uptime: expect.any(Number),
       })
     );

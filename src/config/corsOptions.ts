@@ -1,6 +1,6 @@
 import { CorsOptions } from 'cors';
 
-const WHITELISTED_DOMAINS = ['http://localhost:3000'];
+const WHITELISTED_DOMAINS = ['http://localhost:3000', undefined];
 
 export const corsOptions: CorsOptions = {
   origin: (origin, callback) => {
