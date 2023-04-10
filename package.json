@@ -1,5 +1,5 @@
 {
-  "name": "cpu-load-api",
+  "name": "app-api",
   "version": "1.0.0",
   "description": "Api to support cpu load monitoring app",
   "main": "index.js",
@@ -39,7 +39,7 @@
     "ts-jest": "^28.0.2",
     "ts-node": "^10.7.0",
     "tsconfig-paths": "^4.0.0",
-    "typescript": "^4.6.4"
+    "typescript": "^5.0.4"
   },
   "dependencies": {
     "cors": "^2.8.5",
